@@ -22,7 +22,7 @@ Alternatively, you can build an image from this Dockerfile by executing
 
 ## Usage
 
-    docker run -it --rm dockerfile/go
+    docker run -it --rm i686/python
 
 ## License
 
