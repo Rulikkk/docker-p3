@@ -1,3 +1,31 @@
+# Python Dockerfile
+
+Dockerfile to build a container image for the i686 platform with [Python](https://www.python.org/) installed.
+
+## Important note
+
+You need an i686 binary of Docker which has to be compiled by yourself.
+
+## The base image
+
+  * [i686/ubuntu](https://registry.hub.docker.com/u/i686/ubuntu/)
+
+## Installation
+
+Pull it from the public [Docker Hub Registry](https://registry.hub.docker.com/) registry:
+
+    docker pull i686/python
+
+Alternatively, you can build an image from this Dockerfile by executing
+
+    docker build -t="i686/python" github.com/dockerfile-i686/python
+
+## Usage
+
+    docker run -it --rm dockerfile/go
+
+## License
+
 The MIT License (MIT)
 
 Copyright (c) Dockerfile Project (i686)
