@@ -1,10 +1,10 @@
 FROM i686/ubuntu
 
-MAINTAINER André König <andre.koenig@posteo.de>
+MAINTAINER Rustem Mustafin <mustafin.rustem@gmail.com>
 
 RUN \
   apt-get update && \
-  apt-get install -y python python-dev python-pip python-virtualenv && \
+  apt-get install -y python3 python3-pip && \
   rm -rf /var/lib/apt/lists/*
 
 CMD ["bash"]
