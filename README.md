@@ -4,7 +4,7 @@ Dockerfile to build a container image for the i686 platform with [Python](https:
 
 ## Important note
 
-You need an i686 binary of Docker which has to be compiled by yourself.
+Strangely, on latest Ubuntu i686 docker just works...
 
 ## The base image
 
@@ -12,17 +12,13 @@ You need an i686 binary of Docker which has to be compiled by yourself.
 
 ## Installation
 
-Pull it from the public [Docker Hub Registry](https://registry.hub.docker.com/):
+You can build an image from this Dockerfile by executing
 
-    docker pull i686/python
-
-Alternatively, you can build an image from this Dockerfile by executing
-
-    docker build -t="i686/python" github.com/dockerfile-i686/python
+    docker build -t="i686/python3" github.com/rulikkk/docker-p3
 
 ## Usage
 
-    docker run -it --rm i686/python
+    docker run -it --rm i686/python3
 
 ## License
 
